@@ -26,13 +26,14 @@ function ToDoList() {
 
     return (
     <div className="to-do-list">
-        <h1>To-DO-List</h1>
+        <h1 className="heading">To-DO-List</h1>
 
         <div>
             <input type="text"
-             placeholder="enter a Task ..."
-            value={newTask}
-            onChange={handleInputChange} />
+                className="inputText"
+                placeholder="enter a Task ..."
+                value={newTask}
+                onChange={handleInputChange} />
 
             <button
                 className="add-button"
@@ -40,9 +41,9 @@ function ToDoList() {
                 Add
             </button>
         </div>
-        <ol>
+        <ol className="orderlist">
             {tasks.map((task,index)=>
-                <li key={index}>
+                <li className="singleListItem" key={index}>
                     <span className="text">{task}</span>
                     <button className="delete-button"
                     onClick={()=>deleteTask(index)}>
