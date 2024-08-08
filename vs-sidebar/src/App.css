@@ -1,6 +1,6 @@
 .folder{
     margin-top: 6px;
-    background-color: rgb(233,233,233);
+    background-color: rgb(216, 212, 212);
     display: flex;
     justify-content: space-between;
     padding: 3px;
@@ -20,3 +20,26 @@
     flex-direction: column;
 
   }
+
+  .rootContainer{
+    background: gray;
+    height: 100vh;
+    width: 100vw;;
+    display: flex;
+    overflow:hidden;
+  }
+
+
+  .sidebar{
+    border: 2px solid black;
+    width: 25%;
+    height: 100%;
+  }
+
+  .codebox{
+    border: 2px solid black;
+    width: 75%;
+    
+
+  }
+

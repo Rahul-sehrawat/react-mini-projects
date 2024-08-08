@@ -14,9 +14,15 @@ function App() {
   }
 
   return (
-      <div>
+      <div className="rootContainer">
+        <div className="sidebar">
         <Folder handleInsetNode =  {handleInsetNode} explorer = {explorerData}/>        
       </div>  
+      <div className="codebox">
+        
+      </div>
+      </div>
+     
   )
 }
 
